@@ -7,55 +7,70 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
 
     </head>
     <body>
+
+    <nav class="navbar">
+        <div class="nav__items">
+            <div class="close-nav"></div>
+            <a href="services.html" class="nav__link">Services</a>
+            <a href="about.html" class="nav__link">Meet The Team</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+    </nav>
+
+    <div class="main">
         <header class="header">
 
-            <div class="logo">
+        <div class="open-nav">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+            <!-- <div class="logo">
                 <img src="img/corruptconnectlogo2.png" alt="">
-            </div>
-
-            <nav >
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">Meet The Team</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
+            </div> -->
             
+            <h1 class="corrupt-title">Corrupt connect</h1>
         </header>
+
 
         <section class="intro" id="home">
             <h1 class="intro__title">
-                Corruption Needn't Be A <strong>Dirty Word</strong>
+                Corruption Needn't Be A 
+                <strong><span>Dirty</span> Word</strong>
             </h1>
-            <img class="intro__img" src="img/introimg.png" alt="">
+            <!-- <img class="intro__img" src="img/introimg.png" alt=""> -->
         </section>
 
         <section class="more-details">
             <h2 class="more-details__intro__text">
                 If you have the money, we have the connections. 
             </h2>
-            <p class="more-details__text">
-                At CorruptConnect, we believe that wealthy people should have the freedom to pay for the life they deserve. 
-            </p>
 
-            <p class="more-details__text">
-                Our life's mission is to make corruption more transparent. We facilitate introductions to Politician's with the Power to make your dreams come true. Whether it's pesky regulation ruining your business deal or marriage laws preventing you marrying your girlfriend as well as your wife... let us connect you with a politician who can help make it all disappear, so you can get on with living the life you deserve. 
-            </p>
+            <div class="more-details__text">
+                <p>
+                    At CorruptConnect, we believe that wealthy people should have the freedom to pay for the life they deserve. 
+                </p>
 
-            <button class="homepagebutton"> Click Here To View Our Services </button>
+                <p>
+                    Our life's mission is to make corruption more transparent. We facilitate introductions to Politician's with the Power to make your dreams come true. Whether it's pesky regulation ruining your business deal or marriage laws preventing you marrying your girlfriend as well as your wife... let us connect you with a politician who can help make it all disappear, so you can get on with living the life you deserve. 
+                </p>
+            </div>
+            
+            <a class="homepagebutton" href="services.html"> Let's build those dreams </a>
                 
             <img class="intro__img" src="" alt="">
         </section>
 
         
         <footer class="footer">
-            <a href="#contactpage" class="nav__link">Get In Touch</a>
+            <a href="contact.html" class="nav__link">Get In Touch</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/">
@@ -69,6 +84,7 @@
                 </li>
             </ul>
         </footer>
+    </div>
 
     </body>
 </html>

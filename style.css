@@ -16,7 +16,9 @@
 }
 
 /* Overriding Custom Properties when there is a larger screen */
-@media (min-width: 800px) {
+/* Change min-width to max */
+
+@media (max-width: 800px) {
     :root {
         --fs-h1: 4.5;
         --fs-h2: 3.75rem;
@@ -36,7 +38,7 @@ html {
 }
 
 body {
-    background: var(--clr-accent);
+    background-image: url(/img/homepagebackground.png);
     color: var(var(--clr-dark));
     margin: 0;
     font-family: var(--ff-primary);
@@ -48,89 +50,80 @@ section {
     padding: 5em 2em;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong { font-weight: var(--fw-reg) }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin:0;
+    align-items: center;
+    margin: 2rem 1.5rem;
+    font-size: var(--fs-h1);
+    color: var(--clr-light);
+}
+.corrupt-title {
+    margin-left: auto;
+    margin-right: 0;
+}
+.open-nav {
+    font-size: var(--fs-h3);
+    color: var(--clr-light);
+    cursor: pointer;
+    z-index: 1;
+}
+.burger-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--clr-light);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.navbar {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--clr-dark);
+    opacity: 0.95;
+    transition: 0.5s;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+}
+.close-nav {
+    cursor: pointer;
+    position: relative;
+    background-color: var(--clr-dark);
+    /* padding: 2rem 1.5rem; */
+    margin: 2rem 1.5rem;
+    height: 3rem;
+}
+.close-nav:before {
+    content: '';
+    height: 3rem;
+    border-left: 0.2rem solid var(--clr-light);
+    position: absolute;
+    transform: rotate(45deg);
+    left: 2rem;
+}
+.close-nav:after {
+    content: '';
+    height: 3rem;
+    border-left: 0.2rem solid var(--clr-light);
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 2rem;
 }
 
-.nav__items {
+.nav__items a {
     list-style-type: none; 
-    display: flex;
-    justify-content: row;
-    padding: 1em;
+    display: block;
+    padding: 1rem;
     font-size: var(--fs-h2);
     font-family: var(--ff-primary);
-}
-
-a {
     text-decoration: none;
-    color: var(--clr-dark);
+    margin: 0.5rem 2rem;
+    color: var(--clr-light);
     font-family: var(--ff-primary)
-}
-
-a:hover {
-    color: var(--clr-light)
-}
-
-.nav__item {
-    padding: 2rem;
-    
-}
-
-.intro__img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.intro {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    }
-
-.intro__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--clr-dark);
-    font-size: 4rem;
-    margin-left: 80px;
-}
-
-.more-details {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-}
-
-.more-details__intro__text {
-    text-align: center;
-    margin: 0;
-}
-
-.more-details__text {
-    text-align: center;
-    margin: 0;
-}
-
-.homepagebutton { 
-    border-radius: 10px;
-    width: 800px;
-    padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
 }
 
 h1, h2, h3 {
@@ -150,22 +143,102 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.button {
-    
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--clr-light);
+    font-size: 1.2rem;
+}
+.footer a {
+    color: var(--clr-light);
+}
+.footer a:hover {
+    color: var(--clr-dark)
+}
+.footer ul {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
+.social-list__item {
+    transform: scale(1.5);
 }
 
-.button:hover {
+/* Home page */
+.intro {
+    /* position: relative;
+    display: inline-block; */
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    }
+
+.intro__title {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* margin: auto; */
+    color: var(--clr-light);
+    /* font-size: 3rem; */
+}
+.intro span {
+    text-decoration: underline red;
+    text-decoration-thickness: 3px;
+}
+
+/* More details section */
+.more-details {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-color: #252525;
+    color: var(--clr-light);
+}
+
+.more-details__intro__text {
+    text-align: center;
+    margin: 0;
+
+}
+
+.more-details__text {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.homepagebutton { 
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1rem 2.5em;
+    margin: auto;
+    margin-top: 2rem;
+    color: red;
+    background-color: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    /* transition: transform 200ms ease-in-out; */
+}
+.homepagebutton :hover {
+    cursor: pointer;
+}
+
+
+/* .button {
+    
+} */
+
+.button :hover {
     transform: scale(1.1);
 }
 
 .logo {
     max-width: 300px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .grid-container {
@@ -174,6 +247,8 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr; 
 }
 
+
+/* Team page */
 .meet-the-team {
     display: block;
     text-align: center;
@@ -185,11 +260,13 @@ h3 {
     margin: 10px;
 }
 
+
+/* Contact page */
 .contact-form {
     max-width: 600px; 
     margin: 0 auto; 
     padding: 20px;
-    box-shadow: 0 0 10px var(--clr-dark)
+    box-shadow: 0 0 10px var(--clr-dark);
     border-radius: 8px; 
 }
 
@@ -200,7 +277,7 @@ h3 {
   width: 100%; 
   padding: 10px; 
   margin-bottom: 15px; 
-  border: 1px solid var(--clr-light)
+  border: 1px solid var(--clr-light);
   border-radius: 4px; 
 }
 
@@ -214,7 +291,7 @@ h3 {
   width: auto; 
   padding: 10px 20px; 
   background-color: var(--clr-light); 
-  color: var(--clr-light)
+  color: var(--clr-light);
   border: none; 
   border-radius: 4px; 
   cursor: pointer; 
