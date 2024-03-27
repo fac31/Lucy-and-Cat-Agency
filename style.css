@@ -6,8 +6,9 @@
 --fw-bold: 600;
 
 --clr-light: #F4F1DE;
---clr-dark: #3D405B;
+--clr-dark: #080607;
 --clr-accent: #dea4de;
+--clr-red: #ec2228;
 
 --fs-h1: 3rem;
 --fs-h2: 2.25rem;
@@ -62,7 +63,12 @@ strong { font-weight: var(--fw-reg) }
 .corrupt-title {
     margin-left: auto;
     margin-right: 0;
+    color: var(--clr-light);
 }
+.corrupt-title a {
+    color: var(--clr-light);
+}
+
 .open-nav {
     font-size: var(--fs-h3);
     color: var(--clr-light);
@@ -84,7 +90,7 @@ strong { font-weight: var(--fw-reg) }
     top: 0;
     background-color: var(--clr-dark);
     opacity: 0.95;
-    transition: 0.5s;
+    transition: 5s;
     z-index: 1;
     display: none;
     flex-direction: column;
@@ -124,6 +130,17 @@ strong { font-weight: var(--fw-reg) }
     margin: 0.5rem 2rem;
     color: var(--clr-light);
     font-family: var(--ff-primary)
+}
+.nav__link {
+    text-decoration: none;
+}
+
+.nav-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: pink;
 }
 
 h1, h2, h3 {
@@ -185,7 +202,7 @@ h3 {
     /* font-size: 3rem; */
 }
 .intro span {
-    text-decoration: underline red;
+    text-decoration: underline var(--clr-red);
     text-decoration-thickness: 3px;
 }
 
@@ -241,12 +258,67 @@ h3 {
     max-width: 300px;
 }
 
-.grid-container {
+/* Services page */
+.services__body {
+    background-image: url(/img/servicesbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services__intro {
+    margin: 2rem auto;;
+    color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services__intro__title {
+    margin-bottom: 13rem;
+}
+
+.services__main {
+    color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10rem;
+}
+.services__intro__text {
+    margin: 3rem auto;
+}
+.services__grid__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
+    gap: 2rem;
+    margin: 2rem auto;  
+    width: 85%;
+}
+.grid-item {
+    border: 2px solid var(--clr-light);
+    border-radius: 1rem;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.grid-item:hover {
+    border: 2px solid var(--clr-red);
 }
 
+.get__in__touch {
+    color: var(--clr-red);
+    text-decoration: none;
+    font-size: var(--fs-h2);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 4rem auto;
+}
+.services__contact__link {
+    color: var(--clr-red);
+}
 
 /* Team page */
 .meet-the-team {

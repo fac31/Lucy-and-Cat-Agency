@@ -15,5 +15,6 @@ closeNavBtn.addEventListener('click', closeNav)
 const openNav = () => {
     navbar.style.display = 'block'
     openNavBtn.style.display = 'none'
+    // mainContent.style.opacity = '0.5'
 }
 openNavBtn.addEventListener('click', openNav)

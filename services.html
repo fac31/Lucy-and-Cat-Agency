@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Lucy and Cat Agency</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lucy and Cat Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
-    <body>
-        <header class="header">
+</head>
 
-            <div class="logo">
-                <img src="img/corruptconnectlogo2.png" alt="">
-            </div>
+<body class="services__body">
 
-            <nav >
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Homepage</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">Meet The Team</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </header>
+    <header class="header">
 
-<section class="services" id="servicepage">
-    <div class="grid-container">
+        <div class="open-nav">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+
+        <h1 class="corrupt-title">
+            <a href="index.html" class="nav__link">
+            Corrupt connect
+        </h1> 
+        
+    </header>
+
+    <nav class="navbar">
+        <div class="nav__items">
+            <div class="close-nav"></div>
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="services.html" class="nav__link">Services</a>
+            <a href="about.html" class="nav__link">Meet The Team</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+    </nav>
+
+    <section class="services__intro">
+        <h1 class="services__intro__title">Our Services</h1>
+
+    </section>
+
+<section class="services__main" id="servicepage">
+
+    <h2 class="services__intro__text">
+        There are so many ways in which we can help you.</h2>
+    <div class="services__grid__container">
         <div class="grid-item">
             <h3>Make Your Criminal Conviction Disappear</h3>
             <p>If you've been convicted of a crime but it's proving inconvenient for your life, let us connect you to the right Police Chief who can make it disappear.</p>
@@ -59,8 +79,12 @@
       </div>
 </section>
 
+<section class="get__in__touch">
+    <a href="contact.html" class="nav__link services__contact__link">GET IN TOUCH</a>
+</section>
+
 <footer class="footer">
-    <a href="#contactpage" class="nav__link">Get In Touch</a>
+    <a href="contact.html" class="nav__link">Get In Touch</a>
     <ul class="social-list">
         <li class="social-list__item">
             <a class="social-list__link" href="https://www.linkedin.com/">
