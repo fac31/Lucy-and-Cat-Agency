@@ -10,42 +10,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 
     </head>
 
-    <body>
-        <header class="header">
+<body class="about__body">
 
-            <div class="logo">
-                <img src="img/corruptconnectlogo2.png" alt="">
-            </div>
+    <header class="header">
 
-            <nav >
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Homepage</a></li>
-                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </header>
+        <h1 class="corrupt-title">
+            <a href="index.html" class="nav__link">
+                <img src="img/CorruptConnectlogo 400x400.png" class="corrupt-logo">
+            </a>
+        </h1> 
+        
+        <div class="open-nav">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+        <div class="close-nav"></div>
+
+        <div class="nav__items">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="services.html" class="nav__link">Services</a>
+            <a href="about.html" class="nav__link">Meet The Team</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+    </nav>
 
 <section class="meet-the-team" id="teampage">
-    <h3 class="meet-the-team__title"> Meet Our Team</h3>
-    <div class="meet-the-team__member">
-        <h3>Vladimir Putin</h3>
-        <p>For the man who needs no introduction, let's just say this: Putin is on our wave length. As Chairman of our Board, Putin helps us stay connected to the Decision Makers who matter. </p>
-        <img class="meet-the-team__img" src="" alt="">
-    </div>
-    <div class="meet-the-team__member">
-        <h3>Lucy King</h3>
-        <p>Lucy is our Chief of Finance, making sure our piles of money get larger and larger.</p>
-        <img class="meet-the-team__img" src="" alt="">
-    </div>
-    <div class="meet-the-team__member">
-        <h3>Catherine Nevin</h3>
-        <p>Catherine is our Chief Networker, getting up close and personal with the Movers and Shakers of the World, so we have them on speed dial for when you need their help.</p>
-        <img class="meet-the-team__img" src="" alt="">
+    <h1 class="about__title">Our People</h1>
+    <h3 class="about__intro-text">Corrupt Connect has offices in London, New York and Dubai.</h3>
+
+    <div class="about__grid-container">
+        <div class="about__grid-item">
+            <img src="img/PutinTempHeadshot.png" class="headshot__img" alt="Image of head and shoulders of Putin.">
+
+            <div class="team-member__text">
+                <h2>Vladimir Putin</h2>
+                <h3>Chairman of the Board</h3>
+                <p>For the man who needs no introduction, let's just say this: Putin is on our wave length. 
+                    As Chairman of the Board, Putin helps us stay connected to the Decision Makers who matter. 
+                </p>
+            </div>
+            <img class="meet-the-team__img" src="" alt="">
+        </div>
+
+        <div class="about__grid-item">
+            <img src="img/HeadshotTemp2.png" class="headshot__img" alt="Side profile of Lucy.">
+            
+            <div class="team-member__text">
+                <h2>Lucy King</h2>
+                <h3>Head of Finance</h3>
+                <p>Lucy makes sure our piles of money get larger with every passing second. She loves money.
+                </p>
+            </div>
+        </div>
+
+        <div class="about__grid-item">
+            <img src="img/HeadshotTemp1.png" class="headshot__img" alt="Image of Catherine.">
+
+            <div class="team-member__text">
+                <h2>Catherine Nevin</h2>
+                <h3>Chief Networker</h3>
+                <p>Catherine spends all day every day getting up close and personal with the movers and shakers of the World, 
+                    so we have them on speed dial for when you need them. 
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
