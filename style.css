@@ -12,7 +12,7 @@
 
 --fs-h1: 3rem;
 --fs-h2: 2.25rem;
---fs-h3: 1.25rem;
+--fs-h3: 1.5rem;
 --fs-body: 1rem;
 }
 
@@ -172,7 +172,7 @@ h3 {
     color: var(--clr-light);
 }
 .footer a:hover {
-    color: var(--clr-dark)
+    color: var(--clr-red)
 }
 .footer ul {
     display: flex;
@@ -232,7 +232,7 @@ h3 {
     padding: 1rem 2.5em;
     margin: auto;
     margin-top: 2rem;
-    color: red;
+    color: var(--clr-red);
     background-color: none;
     text-decoration: none;
     font-size: 1.5rem;
@@ -288,7 +288,7 @@ h3 {
 .services__intro__text {
     margin: 3rem auto;
 }
-.services__grid__container {
+.services__grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
@@ -296,14 +296,14 @@ h3 {
     margin: 2rem auto;  
     width: 85%;
 }
-.grid-item {
+.services__grid-item {
     border: 2px solid var(--clr-light);
     border-radius: 1rem;
     padding: 2.5rem 1.5rem;
     display: flex;
     flex-direction: column;
 }
-.grid-item:hover {
+.services__grid-item:hover {
     border: 2px solid var(--clr-red);
 }
 
@@ -320,17 +320,62 @@ h3 {
     color: var(--clr-red);
 }
 
+
 /* Team page */
+.about__body {
+    background-color: var(--clr-dark);
+    background-image: url(/img/AboutUsBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .meet-the-team {
     display: block;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 35rem auto 3rem auto;
+    padding: 0;
+    color: var(--clr-light);
 }
 
-.meet-the-team__title {
-    margin: 10px;
+.about__title {
+    margin: 4rem;
+    font-size: var(--fs-h1);
 }
+.about__intro-text {
+    margin: 2rem auto;
+    width: 70rem;
+    font-size: var(--fs-h2);
+}
+.about__grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 2rem;
+    margin: 5rem auto;
+    width: 60rem;
+}
+.about__grid-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+}
+.headshot__img {
+    width: 20rem;
+    height: 20rem;
+}
+.team-member__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.team-member__text h2, 
+.team-member__text h3, 
+.team-member__text p {
+    margin: 0.5rem 0;
+}
+
+
 
 
 /* Contact page */
