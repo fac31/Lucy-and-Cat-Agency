@@ -61,21 +61,14 @@ strong { font-weight: var(--fw-reg) }
     font-size: var(--fs-h1);
     color: var(--clr-light);
 }
-.corrupt-logo {
-    margin-right: auto;
-    left: 5rem;
-    color: var(--clr-light);
-    width: 15rem;
-}
-/* .corrupt-title {
+.corrupt-title {
     margin-right: auto;
     margin-left: 0;
     color: var(--clr-light);
-} */
-/* .corrupt-title a {
-    color: var(--clr-light);
-} */
-
+}
+.corrupt-logo {
+    width: 15rem;
+}
 .open-nav {
     font-size: var(--fs-h3);
     color: var(--clr-light);
