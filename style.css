@@ -126,13 +126,12 @@ strong { font-weight: var(--fw-reg) }
     transform: rotate(-45deg);
     left: 2rem;
 }
-.nav__items {
+.nav__list {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
-.nav__items a {
-    list-style-type: none; 
+.nav__item {
     padding: 1rem;
     margin: 0 1.5rem;
     float: right;
@@ -142,7 +141,7 @@ strong { font-weight: var(--fw-reg) }
     color: var(--clr-light);
     font-family: var(--ff-primary)
 }
-.nav__items li {
+.nav__list li {
     list-style-type: none; 
 }
 .nav__link {
