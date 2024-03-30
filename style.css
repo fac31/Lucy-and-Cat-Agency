@@ -64,10 +64,13 @@ strong { font-weight: var(--fw-reg) }
 .corrupt-title {
     margin-right: auto;
     margin-left: 0;
+    height: 6rem;
     color: var(--clr-light);
 }
 .corrupt-logo {
-    width: 15rem;
+    width: 5rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
 }
 .open-nav {
     font-size: var(--fs-h3);
@@ -254,7 +257,7 @@ h3 {
 
 /* Services page */
 .services__body {
-    background-image: url(/img/servicesbackground.png);
+    background-image: url(img/servicesbackgroundv2.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -266,9 +269,10 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 0;
 }
 .services__intro__title {
-    margin-bottom: 13rem;
+    margin-top: 20rem;
 }
 
 .services__main {
@@ -277,17 +281,16 @@ h3 {
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    margin-top: 10rem;
 }
 .services__intro__text {
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
 .services__grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 2rem;
-    margin: 2rem auto;  
+    margin: 4rem auto;  
     width: 85%;
 }
 .services__grid-item {
@@ -319,15 +322,15 @@ h3 {
 /* Team page */
 .about__body {
     background-color: var(--clr-dark);
-    background-image: url(/img/AboutUsBackground.png);
-    background-size: contain;
+    background-image: url(img/AboutUsBackgroundv2.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .meet-the-team {
     display: block;
     text-align: center;
-    margin: 35rem auto 3rem auto;
+    margin: 25rem auto 3rem auto;
     padding: 0;
     color: var(--clr-light);
 }
@@ -375,7 +378,7 @@ h3 {
 
 /* Contact page */
 .contact__body {
-    background-image: url(img/contactbackground1.png);
+    background-image: url(img/contactbackgroundv2.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--clr-light);
