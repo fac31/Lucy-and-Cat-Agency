@@ -197,6 +197,7 @@ h3 {
 
 .intro__title {
     color: var(--clr-light);
+    text-align: center;
 }
 .intro span {
     text-decoration: underline var(--clr-red);
@@ -237,6 +238,7 @@ h3 {
     text-decoration: underline var(--clr-red);
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
+    text-align: center;
     /* transition: transform 200ms ease-in-out; */
 }
 .homepagebutton :hover {
@@ -451,7 +453,8 @@ h3 {
 
 /* RESPONSIVE DESIGN FOR MOBILE */
 
-@media (300px <= width <=600px) {
+@media (250px <= width <=600px) {
+
     .body {
         display: flex;
         justify-content: center;
@@ -730,6 +733,42 @@ h3 {
 }
    
 
+@media (601px <= width <=900px) {
+
+    .about__title {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .about__intro-text {
+        font-size: 1.5rem;
+        width: 600px;
+        text-align: left;
+    }
+
+    .about__grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 2rem;
+        width: 10rem;
+    }
+    .about__grid-item {
+        display: grid;
+        gap: 1rem;
+    }
+    .headshot__img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .team-member__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
 
 
   /* Overriding Custom Properties when there is a larger screen */
