@@ -45,6 +45,9 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    /* transition: opacity 3s ease-in-out;
+    opacity: 0.5;
+    background-color: #080607; */
 }
 
 section {
@@ -93,9 +96,7 @@ strong { font-weight: var(--fw-reg) }
     right: 0;
     top: 0;
     background-color: var(--clr-dark);
-    /* opacity: 0.95;
-    transition: 5s; */
-    z-index: 1;
+    z-index: 2;
     flex-direction: column;
 }
 .close-nav {
@@ -149,6 +150,23 @@ strong { font-weight: var(--fw-reg) }
 }
 .hide {
     display: none;
+}
+.nav__open {
+    /* background-color: #080607; */
+    transition: opacity 3s ease-in-out;
+    opacity: 0.5;
+}
+.transparent-bg {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: #010014;
+    opacity: 0;
 }
 
 .nav-iframe {
@@ -232,7 +250,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-.services__contact__link { 
+.services_to_contact__link { 
     border-radius: 10px;
     width: fit-content;
     padding: 1rem 2.5em;
@@ -271,8 +289,16 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.services__intro {
-    margin: 2rem auto;;
+.services__main {
+    color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 25rem;
+}
+.services__intro__title {
+    margin: 2rem auto;
     color: var(--clr-light);
     display: flex;
     justify-content: center;
@@ -280,19 +306,9 @@ h3 {
     flex-direction: column;
     padding-bottom: 0;
 }
-.services__intro__title {
-    margin-top: 20rem;
-}
-
-.services__main {
-    color: var(--clr-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-}
 .services__intro__text {
     margin: 1rem auto;
+    font-size: var(--fs-h2);
 }
 .services__grid-container {
     display: grid;
@@ -397,12 +413,14 @@ h3 {
     padding: 12rem 4rem 6rem 4rem;
 }
 .contact__title {
-    margin: 4rem auto;
+    margin: 4rem;
+    width: 90%;
 }
 .contact__intro-text {
-    margin: 2rem auto;
+    margin: 2rem 4rem;
     width: 70rem;
     font-size: var(--fs-h2);
+    width: 90%;
 }
 
 .contact-form {
