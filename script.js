@@ -66,3 +66,67 @@ const handleKeyPressClose = (event) => {
     }
 }
 closeNavBtn.addEventListener('keypress', handleKeyPressClose)
+
+
+
+// Form functionality
+
+const submitForm = document.querySelector('.submit-form')
+const inputName = document.getElementById('name')
+const inputEmail = document.getElementById('email')
+const testBtn = document.querySelector('.test-btn')
+
+let formSubmitted = false
+
+let userInput = {
+    name: "",
+    email: "",
+    options: "",
+    subject: "",
+    message: ""
+}
+
+const checkForm = (e) => {
+    e.preventDefault()
+    let requiredFields = document.getElementsByClassName('form-input')
+    let formIsValid = true
+
+    let requiredDiv = document.createElement('div')
+    requiredDiv.innerHTML = 'Please fill out this field.'
+    requiredDiv.classList.add('invalid')
+
+    for (let i = 0; i < requiredFields.length; i++) {
+        if (requiredFields[i].value === "") {
+        // Tell user that all fields are required.
+            requiredFields[i].parentElement.parentElement.appendChild(requiredDiv)
+            // formIsValid = false
+        } else if (requiredFields[i].value !== "") {
+        // Set the userInput object with the user's information.
+            let currentField = requiredFields[i].name
+            userInput[currentField] = requiredFields[i].value
+        }
+    }
+
+    const isEmpty = Object.values(userInput).some(x => x === "")
+
+    if (!isEmpty) {
+        formIsValid = true
+
+        // Create a key for data to be stored against
+        let date = new Date()
+        let timestamp = date.toUTCString()
+
+        // Save user message to local storage
+        // Content must be converted to JSON to be stored
+        localStorage.setItem(timestamp, JSON.stringify(userInput))
+
+        for (let i = 0; i < requiredFields.length; i++) {
+            requiredFields[i].value = ""
+        }
+    } else {
+        formIsValid = false
+    }
+}
+
+
+submitForm.addEventListener('click', checkForm)

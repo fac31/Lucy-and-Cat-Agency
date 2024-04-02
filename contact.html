@@ -51,38 +51,49 @@
     
     <form class="contact-form" action="" method="">
         <div class="form-content">
-            <label for="name">NAME</label>
-            <input type="text" id="name" name="name" required>
+            <div class="form-inner-content">
+                <label for="name">NAME</label>
+                <input type="text" class="form-input" id="name" name="name" >
+            </div>
         </div>
         
         <div class="form-content">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-inner-content">
+                <label for="email">EMAIL</label>
+                <input type="email" class="form-input" id="email" name="email" >
+            </div>
+
         </div>
 
         <div class="form-content">
-            <label for="options">ANNUAL INCOME</label>
+            <div class="form-inner-content">
+                <label for="options">ANNUAL INCOME</label>
 
-            <select id="options" name="options" required>
-                <option value="option0"> &nbsp; &nbsp;</option>
-                <option value="option1">100-500k &nbsp; &nbsp;</option>
-                <option value="option2">500k-1mil &nbsp; &nbsp;</option>
-                <option value="option3">1-5mil &nbsp; &nbsp;</option>
-                <option value="option4">5mil+ &nbsp; &nbsp;</option>
-            </select>
+                <select class="form-input" id="options" name="options" required>
+                    <option value="option0"> &nbsp; &nbsp;</option>
+                    <option value="100-500k">100-500k &nbsp; &nbsp;</option>
+                    <option value="500k-1mil">500k-1mil &nbsp; &nbsp;</option>
+                    <option value="1-5mil">1-5mil &nbsp; &nbsp;</option>
+                    <option value="5mil+">5mil+ &nbsp; &nbsp;</option>
+                </select>
+            </div>
         </div>
 
         <div class="form-content">
-            <label for="subject">SUBJECT</label>
-            <input type="text" id="subject" name="subject" required>
+            <div class="form-inner-content">
+                <label for="subject">SUBJECT</label>
+                <input type="text" class="form-input" id="subject" name="subject" required>
+            </div>
         </div>
 
         <div class="form-content">
-            <label class="message__label" for="message">MESSAGE</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="form-inner-content">
+                <label class="message__label" for="message">MESSAGE</label>
+                <textarea class="form-input" id="message" name="message" rows="4" required></textarea>
+            </div>
         </div>
-
-    <input type="submit" value="SUBMIT">
+    
+    <input class="submit-form" type="submit" value="SUBMIT">
 
     </form>
 </section>
