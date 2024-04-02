@@ -33,9 +33,6 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    /* transition: opacity 3s ease-in-out;
-    opacity: 0.5;
-    background-color: #080607; */
 }
 
 section {
@@ -164,7 +161,6 @@ h3 {
     display: none;
 }
 .nav__open {
-    /* background-color: #080607; */
     transition: opacity 3s ease-in-out;
     opacity: 0.5;
 }
@@ -177,7 +173,7 @@ h3 {
     margin: 0;
     padding: 0;
     top: 0;
-    background-color: #010014;
+    background-color: #0f121a;
     opacity: 0;
 }
 

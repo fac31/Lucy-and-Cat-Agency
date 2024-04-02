@@ -27,7 +27,7 @@ const openNav = () => {
     openNavBtn.classList.add('hide')
     // body.classList.add('nav__open')
     transparentBg.style.display = 'block'
-    transparentBg.style.opacity = '0.9'
+    transparentBg.style.opacity = '0.95'
     navIsOpen = true
 }
 openNavBtn.addEventListener('click', openNav)
