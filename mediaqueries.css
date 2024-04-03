@@ -1,303 +1,32 @@
 
-/* RESPONSIVE DESIGN FOR MOBILE */
+  /* Overriding Custom Properties when there is a larger screen */
 
-@media (250px <= width <=600px) {
+@media screen and (max-width: 950px) {
+    :root {
+        --fs-h1: 3rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 2rem;
+        --fs-body: 1.5rem;
 
-    .body {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        box-sizing: border-box;
+        --clr-light: #F4F1DE;
+        --clr-dark: #080607;
+        --clr-accent: #dea4de;
+        --clr-red: #ec2228;
     }
-
-    .main {
-        width: 100%;
-    }
-
-    section {
-        padding: none;
-    }
-
-
-    /* HOMEPAGE | MOBILE */
-    
-    .corrupt-title {
-        margin-right: auto;
-        margin-left: 0;
-        height: 6rem;
-        color: var(--clr-light);
-    }
-
-    .intro {
-        display: block;
-        text-align: center;
-        width: 100%;
-        }
-
-    .intro__title {
-        font-size: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .more-details-intro__text {
-        font-size: 3rem;
-    }
-
-    .more-details__text {
-        margin: 0%;
-    }
-
-
-    /* NAVBAR MOBILE */
-
-    .navbar {
-        height: 90%;
-        width: 75%;
-    }
-
-
-
-    /* .services_to_contact__link {
-        font-size: 1rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
-
-
-
-
-
-    .meet-the-team {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ABOUT US | MOBILE */
-
-    .about__title {
-        font-size: 3rem;
-    }
-
-    .about__intro-text {
-        font-size: 1.5rem;
-        width: 100%;
-        padding: 3rem;
-    }
-
-    .about__grid-container {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin: 5rem auto;
-        width: 20rem;
-    }
-    .about__grid-item {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-    }
-    .headshot__img {
-        width: 15rem;
-        height: 15rem;
-    }
-    .team-member__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    .team-member__text h2, 
-    .team-member__text h3, 
-    .team-member__text p {
-        margin: 0.5rem 0;
-    }
-
-
-
-     /* CONTACT US | MOBILE */
-
-     .contact__body {
-        background-image: url(img/contactbackgroundformobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--clr-light);
-    }
-    .contact__main {
-        font-size: 2rem;
-        padding: 2rem;
-    }
-    .contact__title {
-        margin-top: 150px;
-        text-align: center;
-    }
-    .contact__intro-text {
-        margin: none;
-        font-size: 2rem;
-        width: 240px;
-        text-align: center;
-    }
-    
-    .contact-form {
-        max-width: 300px; 
-        margin: 1rem;
-        padding: 2px 2px;
-        border: 0.2rem solid var(--clr-light);
-        border-radius: 8px; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .form-content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
-        font-size: 1rem;
-    }
-    .message__label {
-        align-self: center;
-    }
-    
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form select,
-    .contact-form textarea {
-      width: 60%; 
-      padding: 10px; 
-      margin-bottom: 15px; 
-      border: 0.2rem solid var(--clr-light);
-      border-radius: 4px; 
-      background-color: var(--clr-dark);
-      color: var(--clr-light);
-    }
-
-    input[type="submit"] {
-        font-size: 1rem;
-    }
-    
-    .contact-form select {
-        width: 60%; 
-        text-align: end;
-    }
-    
-    .contact-form textarea {
-      height: 150px; 
-      resize: vertical; 
-    }
-    
-    .contact-form input[type="submit"],
-    .contact-form button {
-      width: 40%; 
-      padding: 5px 10px; 
-      background-color: var(--clr-red); 
-      color: var(--clr-light);
-      border: none; 
-      border-radius: 4px; 
-      cursor: pointer; 
-      display: inline-block; 
-      margin: 2rem auto; 
-    }
-    
-    .contact-form input[type="submit"]:hover,
-    .contact-form button:hover {
-      background-color: var(--clr-dark) /* Darker shade on hover */
-    }
-
-    .popup {
-        width: 60%;
-        height: 40%;
-        left: 25%;
-    }
-    .popup h3 {
-        font-size: 1.5rem;
-    }
-
-
-     /* SERVICES | MOBILE */
-
-     .services__body {
-        background-image: url(img/servicesbackgroundformobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .services__intro {
-        margin: 2rem auto;
-        color: var(--clr-light);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 0;
-    }
-    .services__intro__title {
-        margin-top: 3rem;
-        font-size: 3rem;
-    }
-    
-    .services__main {
-        color: var(--clr-light);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-    }
-    .services__intro__text {
-        margin: 1rem auto;
-        font-size: 2rem;
-        width: 300px;
-        text-align: center;
-    }
-    .services__grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-        gap: 2rem;
-        margin: 4rem auto;  
-        width: 85%;
-    }
-    .services__grid-item {
-        border: 2px solid var(--clr-light);
-        border-radius: 1rem;
-        padding: 2.5rem 1.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .services__grid-item:hover {
-        border: 2px solid var(--clr-red);
-    }
-    
-    .get__in__touch {
-        color: var(--clr-red);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1rem;
-        margin: auto;
-    }
-    .services_to_contact__link {
-        color: var(--clr-red);
-        text-decoration: none;
-        font-size: 1.5rem;
-        margin: auto;
-    }
-
 }
-   
+h1 {
+    font-size: var(--fs-h1);
+}
 
-@media (601px <= width <=900px) {
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+@media screen and (max-width: 900px) {
 
     .about__title {
         font-size: 2rem;
@@ -347,13 +76,252 @@
 }
 
 
-  /* Overriding Custom Properties when there is a larger screen */
+/* RESPONSIVE DESIGN FOR MOBILE */
 
-@media (max-width: 950px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+@media screen and (max-width: 600px) {
+
+    .body {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
     }
+
+    .main {
+        width: 100%;
+    }
+
+    section {
+        padding: none;
+    }
+
+
+    /* HOMEPAGE | MOBILE */
+    
+    .corrupt-title {
+        margin-right: auto;
+        margin-left: 0;
+        height: 6rem;
+        color: var(--clr-light);
+    }
+
+    .intro {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .intro__title {
+        font-size: var(--fs-h1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .more-details {
+        padding: 0 2rem;
+        margin: auto;
+        /* padding-top: 0; */
+    }
+    .more-details-intro__text {
+        font-size: var(--fs-h2);
+    }
+
+    .more-details__text {
+        margin: 0%;
+    }
+    .services_to_contact__link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin:  1rem auto;
+    }
+
+
+    /* NAVBAR MOBILE */
+
+    .navbar {
+        height: 90%;
+        width: 75%;
+    }
+
+    .meet-the-team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* SERVICES | MOBILE */
+
+    .services__body {
+        background-image: url(img/servicesbackgroundformobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .services__main {
+        margin-top: 8rem;
+    }
+    
+    .services__intro__title {
+        margin-top: 3rem;
+        font-size: var(--fs-h1);
+    }
+    
+    .services__intro__text {
+        margin: 1rem auto;
+        font-size: var(--fs-body);
+        width: 85%;
+        text-align: center;
+    }
+    .services__grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 2rem;
+        margin: 3rem auto;  
+        width: 85%;
+    }
+    .services__grid-item {
+        border: 2px solid var(--clr-light);
+        border-radius: 1rem;
+        padding: 2.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .services__grid-item:hover {
+        border: 2px solid var(--clr-red);
+    }
+    
+    .get__in__touch {
+        align-items: center;
+        padding: 0 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+
+    /* ABOUT US | MOBILE */
+
+    .meet-the-team {
+        margin: 5rem auto 3rem auto;
+    }
+    .about__title {
+        font-size: var(--fs-h1);
+    }
+
+    .about__intro-text {
+        font-size: 1.5rem;
+        width: 85%;
+        padding: 1.5rem;
+        margin: auto;
+        background-color: var(--clr-dark);
+        border-radius: 5px;
+    }
+
+    .about__grid-container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        gap: 2rem;
+        margin: 5rem auto 2rem auto;
+        width: 20rem;
+    }
+    .about__grid-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .headshot__img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .team-member__text {
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .team-member__text h2 {
+        font-size: var(--fs-h2);
+    }
+
+
+    /* CONTACT US | MOBILE */
+
+    .contact__body {
+        background-image: url(img/contactbackgroundformobile.png);
+    }
+    .contact__main {
+        margin-top: 12rem;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .contact__title {
+        margin: 5rem auto;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .contact__intro-text {
+        margin: auto;
+        font-size: 2rem;
+        width: 85%;
+        text-align: center;
+    }
+    
+    .contact-form {
+        width: 90%;
+        margin: 2rem auto;
+        padding: 20px 20px;
+    }
+    .form-content {
+        justify-content: center;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+    .form-inner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin: auto;
+        width: 90%;
+    }
+    .message__label {
+        align-self: center;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%;
+        border: 0.1rem solid var(--clr-light);
+        border-radius: 4px; 
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+    .contact-form input[type="submit"],
+    .contact-form button {
+      padding: 5px 10px; 
+      font-size: 1.2rem;
+    }
+    .popup {
+        width: 60%;
+        height: 40%;
+        left: 25%;
+    }
+    .popup h3 {
+        font-size: 1.5rem;
+    }
+
+
+
 }
