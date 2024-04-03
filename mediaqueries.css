@@ -14,6 +14,11 @@
         width: 100%;
     }
 
+    section {
+        padding: none;
+    }
+
+
     /* HOMEPAGE | MOBILE */
     
     .corrupt-title {
@@ -45,21 +50,15 @@
         margin: 0%;
     }
 
+
+    /* NAVBAR MOBILE */
+
     .navbar {
-        height: 100%;
-        width: 25%;
-        position: fixed;
-        right: 0;
-        top: 0;
-        background-color: var(--clr-dark);
-        z-index: 1;
-        display: none;
-        flex-direction: column;
+        height: 90%;
+        width: 75%;
     }
 
-    section {
-        padding: none;
-    }
+
 
     .services_to_contact__link {
         font-size: 1rem;

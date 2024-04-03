@@ -22,7 +22,6 @@ const closeNav = () => {
 
     // If navbar is closed, remove the eventlistener that closes the navbar
     transparentBg.removeEventListener('click', handleClickOutsideNavbar)
-
 }
 closeNavBtn.addEventListener('click', closeNav)
 
@@ -31,9 +30,11 @@ const openNav = () => {
     navbar.classList.remove('hide')
     // Show navbar
     openNavBtn.classList.add('hide')
+
     // Change background of main content to blurred
     transparentBg.style.display = 'block'
     transparentBg.style.opacity = '0.95'
+    
     navIsOpen = true
 
     // If navbar is open, close navbar by clicking outside of the navbar
