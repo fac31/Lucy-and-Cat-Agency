@@ -60,14 +60,18 @@
 
 
 
-    .services_to_contact__link {
+    /* .services_to_contact__link {
         font-size: 1rem;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
+
+
+
+
 
     .meet-the-team {
         display: flex;
@@ -118,6 +122,8 @@
     .team-member__text p {
         margin: 0.5rem 0;
     }
+
+
 
      /* CONTACT US | MOBILE */
 
@@ -209,6 +215,16 @@
       background-color: var(--clr-dark) /* Darker shade on hover */
     }
 
+    .popup {
+        width: 60%;
+        height: 40%;
+        left: 25%;
+    }
+    .popup h3 {
+        font-size: 1.5rem;
+    }
+
+
      /* SERVICES | MOBILE */
 
      .services__body {
@@ -265,16 +281,17 @@
     
     .get__in__touch {
         color: var(--clr-red);
-        text-decoration: none;
-        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        margin: 2rem auto;
+        padding: 0 1rem;
+        margin: auto;
     }
     .services_to_contact__link {
         color: var(--clr-red);
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: auto;
     }
 
 }
@@ -315,6 +332,18 @@
         text-align: center;
     }
     
+
+    /* CONTACT */
+
+    .popup {
+        width: 60%;
+        height: 40%;
+        left: 20%;
+    }
+    .popup h3 {
+        font-size: 1.5rem;
+    }
+
 }
 
 

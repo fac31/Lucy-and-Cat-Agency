@@ -1,5 +1,8 @@
 console.log('Hello world')
 
+
+// NAVBAR FUNCTIONALITY
+
 let navbar = document.querySelector('.navbar') 
 let closeNavBtn = document.querySelector('.close-nav') 
 let openNavBtn = document.querySelector('.open-nav')
@@ -70,14 +73,15 @@ closeNavBtn.addEventListener('keypress', handleKeyPressClose)
 
 
 
-// Form functionality
+
+// FORM FUNCTIONALITY
 
 const submitForm = document.querySelector('.submit-form')
 const inputName = document.getElementById('name')
 const inputEmail = document.getElementById('email')
-const testBtn = document.querySelector('.test-btn')
 
 let formSubmitted = false
+
 
 let userInput = {
     name: "",
@@ -121,13 +125,50 @@ const checkForm = (e) => {
         // Content must be converted to JSON to be stored
         localStorage.setItem(timestamp, JSON.stringify(userInput))
 
+        showPopUp()
+
         for (let i = 0; i < requiredFields.length; i++) {
             requiredFields[i].value = ""
         }
+
     } else {
         formIsValid = false
     }
 }
 
-
 submitForm.addEventListener('click', checkForm)
+
+
+let popUpIsOpen = false
+let popUp = document.querySelector('.popup')
+let popupBtn = document.querySelector('.popup-btn')
+
+const showPopUp = () => {
+    if (!popUpIsOpen) {
+        popUp.style.visibility = 'visible';
+        popUpIsOpen = true
+        window.scrollTo({top: 0, behavior: 'smooth'})
+
+
+        transparentBg.style.display = 'block'
+        transparentBg.style.opacity = '0.8'
+
+        console.log('pop up visible',)
+    } 
+}
+
+const hidePopUp = () => {
+    if (popUpIsOpen) {
+        popUp.style.visibility = 'hidden';
+        popUpIsOpen = false
+
+        transparentBg.style.opacity = '0'
+        transparentBg.style.display = 'none'
+    }
+}
+
+popupBtn.addEventListener('click', hidePopUp)
+
+
+let testBtn = document.querySelector('.test-btn')
+testBtn.addEventListener('click', showPopUp)

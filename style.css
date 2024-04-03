@@ -486,3 +486,34 @@ h3 {
     margin-right: 6rem;
     align-self: flex-end;
 }
+
+.popup {
+    width: 25rem;
+    height: 20rem;
+    border: 0.2rem solid var(--clr-light);
+    border-radius: 4px; 
+    background-color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    left: 35%;
+    top: 25%;
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    font-size: 1.5rem;
+}
+.popup h3 {
+    font-size: 2rem;
+}
+.popup-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-red);
+    color: var(--clr-light);
+    /* border-radius: 4px; */
+    border: 0;
+    cursor: pointer;
+}
